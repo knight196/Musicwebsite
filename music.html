@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="music.css">
+    <script src="music.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Music</title>
+</head>
+<body>
+
+    <div class="center">
+        <header>ALLROUND MUSIC</header>
+    
+        <div class="container1" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+    
+        <hr>
+        
+    
+        
+        <div class="navtop">
+    
+            <div class="topnav">
+                <div class="faderight">
+                    <span><i class="fas fa-user"></i></span>
+                        <p id="user"><a href="Login.html">LOGIN</p></a>
+                </div>
+    
+            <div class="home fadeleft">
+                <p><a href="walkman.html">HOME</p></a>
+                <p><a href="albums.html">ALBUMS</p></a>
+                <p style="border-bottom: 2px solid white;"><a href="music.html">MUSIC</p></a>
+                <p><a href="Pricingtable.html">PREMIUM</p></a>
+            </div>
+    
+            </div>
+    
+        </div>
+    
+
+    <main>
+
+        <div class="borderbox">
+            <div class="border"></div>
+            <img src="" class="img">
+        </div>
+
+<div class="audiooption">
+<button id="prev"><i class="fas fa-backward"></i></button>
+<button id="audioplayer"><i class="fas fa-play"></i></button>
+<button id="stop"><i class="fas fa-stop"></i></button>
+<button id="next"><i class="fas fa-forward"></i></button>
+</div>
+
+    <div class="music">
+        
+
+<audio src="" id="audiolist"></audio>
+
+    </div>
+
+    <div class="progress">
+
+        <div class="songset">
+            <h1 id="songname"></h1>
+        </div>
+
+
+        <progress id="progress" value="0"></progress>
+
+    </div>
+
+<br>
+
+<div class="timer">
+    <div></div>
+    <span aria-label="timer">00:00</span>
+  </div>
+
+  <input class="slider" id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+ <br> 
+  <span>Adjust your volume</span>
+        </div>
+        
+        
+                <ol class="listcollection">
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                </ol>
+
+        </main>
+
+        <section class="desktopui">
+
+            <div class="sidenav">
+
+                <div>
+                    <h1>ALLROUND MUSIC</h1>
+                </div>
+
+                <div class="href">
+                    <p><a href="walkman.html">HOME</p></a>
+                    <p id="user" style="border-bottom:2px solid white;font-size:20px;">MUSIC</p>
+                    <p><a href="albums.html">ALBUM</p></a>
+                        <p><a href="Login.html">LOGIN</p></a>
+                    <p><a href="Pricingtable.html">PREMIUM</p></a>
+                </div>
+
+                <div class="playlist">
+                    <p style="color:lightskyblue;">YOUR LIBRARY</p>
+                    <br>
+                   
+                    <p><i class="fas fa-clock"></i> RECENTLY ADDED</p>
+                    <p><i class="fas fa-heart"></i> FAVORITE SONGS</p>
+                    <p><i class="fas fa-user"></i> ARTISTS</p>
+                    
+                </div>
+
+                <div class="playlist">
+                    <p style="color:lightskyblue;">PLAYLIST</p>
+                    <br>
+                   
+                    <p>TOP BLUES</p>
+                    <p>TOP RELAX MUSIC</p>
+                    <p>TOP POP</p>
+                    
+                </div>
+
+            </div>
+
+<div class="sideui">
+
+
+    <div class="search">
+
+        <div class="searchbtn">
+            <input class="searchinput" id="myInput" type="text" placeholder="search">
+            <span onclick="myFunction2()"><i class="fas fa-search"></i></span>
+        </div>
+
+
+        <div class="icons">
+            <i class="fas fa-cog"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user"></i>
+        </div>
+
+    </div>
+
+            <ul class="musicimg">
+
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+                
+            </ul>
+
+            <div class="feature">
+                <h1>Features</h1>
+                <p>This week</p>
+            </div>
+
+            <div class="featurecard">
+            <img src="./images/disc.jpg">
+
+            <div>
+                <img src="./images/grass.jpg">
+                <img src="./images/grass2.jpg">
+                <img src="./images/river.jpg">
+                <img src="./images/moonstrike.jpg">
+                <img src="./images/leaf.jpg">
+            </div>
+
+            </div>
+
+      
+        </div>
+
+        
+        
+    </section>
+    
+    <div class="bottomplay">
+
+        <audio src="" id="audiolist2"></audio>
+
+        <div class="bottomsong">
+
+            <img src="" id="bottomimg">
+
+            <div class="songname">
+                <p id="bottomsongname"></p>
+            </div>
+
+            
+        </div>
+        
+        <div>
+            <button id="prev2"><i class="fas fa-backward"></i></button>
+            <button id="play"><i class="fas fa-play"></i></button>
+            <button id="stop2"><i class="fas fa-stop"></i></button>
+            <button id="next2"><i class="fas fa-forward"></i></button>
+        </div>
+
+        <div class="progressbar">
+            <progress id="progress2" value="0"></progress>
+        </div>
+
+        <div class="timer2">
+            <div></div>
+            <span aria-label="timer2">00:00</span>
+          </div>
+        
+          <div class="volume">
+            <i class="fas fa-volume-off"></i>
+            <input class="slider" id="volumeslider2" type="range" min="0" max="100" value="100" step="1">
+          </div>
+
+    </div>
+
+    
+</body>
+</html>
