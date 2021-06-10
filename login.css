@@ -81,6 +81,7 @@ section{
     transition:1s all;
     font-family: 'Goblin One', cursive;
     color:white;
+      pointer-events:none;
     }
     .home > p{
       margin: 10px;
@@ -97,6 +98,7 @@ section{
       opacity:1;
       transition:1s all;
       height:100%;
+        pointer-events:auto;
     }
     
     .home{
