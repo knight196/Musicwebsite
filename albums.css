@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+*{
+box-sizing: border-box;
+padding:0;
+margin:0;
+}
+
+body{
+    background:lightblue;
+    text-align: center;
+}
+.fa-user{
+  padding:10px;
+  border-radius: 50px;
+  background:grey;
+  margin-bottom:10px;
+}
+
+.center{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  background:black;
+  color:white;
+}
+
+header{
+    font-family: 'Goblin One', cursive;
+    font-size: 20px;
+}
+section{
+    margin-top:50px;
+    padding-bottom:50px;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container1 {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .navtop{
+    background:darkcyan;
+    position:fixed;
+    text-align: center;
+    z-index:200;
+    opacity:0;
+    width:100%;
+    height:0;
+    left:0;
+    transition:1s all;
+    font-family: 'Goblin One', cursive;
+    color:white;
+    pointer-events: none;
+    }
+    .home > p{
+      margin: 10px;
+    }
+    .home > p:nth-child(1){
+      color:red;
+    }
+    .topnav{
+      position: relative;
+      top:100px;
+      cursor: pointer;
+    }
+    .topnav a:hover{
+      opacity:0.5;
+    }
+    .navtop.show{
+      opacity:1;
+      transition:1s all;
+      height:100%;
+      pointer-events: auto;
+    }
+    
+    .home{
+      margin-top:50px;
+    }
+
+    .desktopnav{
+        display:none;
+    }
+
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    a:hover{
+        color:grey;
+        
+    }
+    .carddesign{
+      flex-direction: column;
+      width:300px;
+      margin:auto;
+      display:flex;
+      position: relative;
+      top:30px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      border:2px solid blue;
+      line-height: 40px;
+      padding:30px 20px;
+    }
+    
+    .carddesign img{
+      width:100%;
+      border-radius: 10px;
+      }
+.card{
+  font-size: 20px;
+}
+.card p{
+  font-weight: bold;
+}
+      .card button{
+padding: 10px 20px;
+border-radius: 20px;
+border:2px solid blue;
+      }
+.desktoptab{
+  display:none;
+}
+.faderight{
+    transform:translateX(60%);
+  }
+  
+  
+        .fadeleft{
+          transform:translateX(-60%);
+        }
+        
+  .faderightshow{
+    transition:2s all;
+  transform:translateX(0);
+  }
+
+  .fadeleftshow{
+    transition:2s all;
+  transform:translateX(0);
+  }
+
+  .filteroption{
+    padding-top:100px;
+    padding-left: 20px;
+  }
+
+select {
+  width: 70%;
+  padding: 15px;
+  border:none;
+  border-radius: 4px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+option{
+text-align: center;
+}
+.tabcontent2{
+  margin-top:20px;
+  display:none;
+  animation:fade 1s;
+
+}
+.allshow{
+  display:block;
+  animation: fade 1s;
+}
+.allcontent{
+  display: grid;
+  grid-template-columns:auto auto;
+  padding:20px;
+  grid-gap: 10px;
+}
+.tabcontent2 img{
+  width:100%;
+  height:150px;
+  right:10px;
+  position: relative;
+  border-radius: 10px;
+}
+.tabcontent2 img:hover{
+opacity:0.5;
+cursor:pointer;
+}
+@keyframes fade{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+    transform: translateY(-10px);
+  }
+}
+
+
+@media screen and (min-width:700px){
+  .carddesign{
+    width:500px;
+  }
+  .allcontent{
+    grid-template-columns: auto auto auto;
+  }
+.allcontent img{
+  height:150px;
+}
+}
+
+@media screen and (min-width:1020px){
+  .allcontent img{
+    height:220px;
+  }
+}
+@media screen and (min-width:1440px){
+  .desktopnav{
+    display:flex;
+  }
+  .container1{
+    display:none;
+  }
+        .desktopnavlist{
+            display:flex;
+        }
+        .desktopnavlist p{
+            padding:0 10px;
+            font-size: 20px;
+            font-family: 'Goblin One', cursive;
+        }
+        .navtop{
+            display:none;
+        }
+     .carddesign{
+       display:flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-around;
+       width:80%;
+       padding:50px 20px;
+       text-align: left;
+       margin-bottom: 10px;
+       margin-left: 150px;
+     }
+     .card{
+       line-height: 50px;
+     }
+     .carddesign img{
+       width:500px;
+       height:350px;
+     }
+     main{
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+  }
+  .tab{
+    display:flex;
+    justify-content: center;
+    width:100%;
+  }
+  
+  .tab button{
+      border:none;
+      border:none;
+      outline:none;
+      cursor: pointer;
+      padding:14px 16px;
+      transition:.3s;
+      font-size: 17px;
+      margin:0 70px
+  }
+  
+  .tab button:hover{
+      opacity:0.5;
+  }
+  
+  .tab button.active{
+      background:#ccc;
+  }
+  
+  .tabcontent{
+      display:none;
+      border:1px solid #ccc;
+      border-top:none;
+      animation: fadeEffect 1s;
+      overflow: hidden;
+      margin:20px auto;
+  }
+  .tabgrid{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:10px;
+    padding:0 50px;
+  }
+
+  .tabgrid > div{
+    margin-top:20px;
+  }
+  .tabgrid > div:hover{
+    opacity:0.5;
+    cursor: pointer;
+  }
+  
+  .tabgrid img{
+      width:100%;
+      height:300px;
+      border-radius: 10px;
+  }
+  
+  @keyframes fadeEffect {
+      from {opacity: 0;
+     }
+      to {opacity: 1;}
+    }
+  .desktoptab{
+    display:block;
+    margin-top: 50px;
+  }
+  .filteroption{
+    display:none;
+  }
+
+    }

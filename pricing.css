@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+    *{
+        box-sizing: border-box;
+        padding:0;
+        margin:0;
+    }
+
+    .center{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+        background:black;
+        color:white;
+        position: fixed;
+        width:100%;
+        z-index:200;
+    }
+    
+    header{
+        font-family: 'Goblin One', cursive;
+        font-size: 20px;
+    }
+    
+    body{
+        background:darkcyan;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:100px;
+        padding-bottom: 50px;
+    }
+    .plan{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding-top:50px;
+    }
+    .plan button{
+        border:none;
+        padding: 10px 40px;
+        border-radius: 20px;
+        margin:0 10px;
+        position: relative;
+        top:50px;
+    }
+    .plan button:hover{
+        color:white;
+        background:grey;
+        cursor: pointer;
+    }
+    .fa-user{
+        padding:10px;
+        border-radius: 50px;
+        background:grey;
+        margin-bottom:10px;
+      }
+    .card{
+        background:darkgrey;
+        width:90%;
+        height:450px;
+        padding:50px;
+        border-radius: 10px;
+        box-shadow: 0 0 40px 0 rgb(0,0,0,0.4);
+        margin-top:10px;
+        position: relative;
+    }
+    .card:hover{
+        transform:scale(1.08);
+        position: relative;
+        z-index:1;
+        cursor: pointer;
+        transition: 0.5s all;
+    }
+
+    .ribbonclass{
+        position: absolute;
+        background:coral;
+        height:100px;
+        width:40px;
+        top:0;
+        right:30px;
+    }
+    .ribbonclass::before{
+        content:'';
+        height:30px;
+        bottom:0;
+        position: absolute;
+        border-left: 20px solid coral;
+		border-right: 20px solid coral;
+		border-bottom: 20px solid darkgrey;
+    }
+
+    .card hr{
+        border:2px solid white;
+        border-radius: 10px;
+    }
+
+    .button{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top:10px;
+    }
+
+    .card .onemonth{
+        background:darkcyan;
+        width:100px;
+        border-radius: 5px;
+        padding: 5px;
+        color:white;
+    }
+
+    .card .twomonth{
+        background:darkcyan;
+        width:100px;
+        border-radius: 5px;
+        padding: 5px;
+        color:white;
+        display:none;
+    }
+
+
+    .benefits{
+        display:flex;
+        align-items: center;
+        padding:10px 0;
+    }
+    .benefits span{
+        padding: 0 10px;
+    }
+    .button button{
+        border:none;
+        border-radius: 20px;
+        padding:10px;
+        background:black;
+        color:white;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .button p:nth-child(2){
+      margin-top: 10px;
+    }
+    .indiviualbutton{
+        position: relative;
+        top:55px;
+    }
+    hr{
+        margin-top:5px;
+    }
+
+    .button button:hover p{
+        color:white;
+        animation: moveright 2s linear;
+    }
+    
+    @keyframes moveright{
+        0%{
+            -moz-transform: translateX(100%);
+            -webkit-transform:translateX(100%);
+            transform:translateX(100%);
+          }
+          100%{
+            -moz-transform:translateX(-100%);
+            -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+          }
+    }
+
+    .container1 {
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    
+      .navtop{
+        background:darkcyan;
+        position:fixed;
+        text-align: center;
+        z-index:200;
+        opacity:0;
+        width:100%;
+        height:0;
+        left:0;
+        top:60px;
+        transition:1s all;
+        font-family: 'Goblin One', cursive;
+        color:white;
+        }
+        .home > p{
+          margin: 10px;
+        }
+        .home > p:nth-child(1){
+          color:red;
+        }
+        .topnav{
+          position: relative;
+          top:100px;
+          cursor: pointer;
+        }
+        .navtop.show{
+          opacity:1;
+          transition:1s all;
+          height:100%;
+        }
+        
+        .home{
+          margin-top:50px;
+        }
+    
+        .desktopnav{
+            display:none;
+        }
+    
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        a:hover{
+            color:grey;
+            opacity:0.5;
+        }
+
+        .year{
+            display:none;
+        }
+          .ribbonwrapper {
+            width: 200px;
+            height: 88px;
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            padding:20px;
+        }
+        .ribbon {
+          font: bold 15px sans-serif;
+          color: #333;
+          text-align: center;
+          transform: rotate(45deg);
+          position: relative;
+          padding: 10px 0;
+          top: 15px;
+          left: -30px;
+          width: 300px;
+          background-color: coral;
+          color: #fff;
+          box-shadow: 0 0 50px 0 rgb(0,0,0,0.2);
+        }
+
+        .familycard{
+            position: relative;
+            overflow: hidden;
+        }
+
+        .fa-check{
+            color:whitesmoke;
+        }
+
+        .faderight{
+            transform:translateX(60%);
+          }
+          .fadeleft{
+            transform:translateX(-60%);
+          }
+          .faderightshow{
+            transition:2s all;
+          transform:translateX(0);
+          }
+          
+          .fadeleftshow{
+            transition:2s all;
+          transform:translateX(0);
+          }
+
+        @media screen and (min-width:700px){
+            .card{
+                width:400px;
+            }
+        }
+
+    @media screen and (min-width:1440px){
+.container{
+    flex-direction: row;
+}
+.card{
+    margin:0 10px;
+}
+.desktopnav{
+    display:flex;
+}
+a{
+    color:white;
+}
+.container1{
+    display:none;
+}
+.desktopnavlist{
+    display:flex;
+}
+.desktopnavlist p{
+    padding:0 10px;
+    font-size: 20px;
+    font-family: 'Goblin One', cursive;
+}
+    }
