@@ -285,6 +285,7 @@ for (let i = 0; i < songlist.length; i++) {
     musicList[i].addEventListener('click', function(){
         loadSong(songlist[this.id]);
         audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
+        document.querySelector('.border').style.animation="borderbox 2s linear infinite";
       audiolist.play();
     })
     
