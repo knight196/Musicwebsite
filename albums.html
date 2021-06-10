@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="albums.css">
+<script src="albums.js" defer></script>
+</head>
+<body>
+
+        <div class="center">
+            <header>ALLROUND MUSIC</header>
+        
+            <div class="container1" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <div class="desktopnav">
+          
+                  <div class="desktopnavlist">
+                    <p><a href="Login.html">LOGIN</p></a>
+                    <p><a href="Pricingtable.html">PREMIUM</p></a>
+                    <p style="border-bottom:2px solid white">ALBUMS</p>
+                      <p><a href="walkman.html">HOME</p></a>
+                      <p><a href="music.html">MUSIC</p></a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="navtop">
+        
+                <div class="topnav">
+                    <div class="faderight">
+                        <span><i class="fas fa-user"></i></span>
+                            <p><a href="Login.html">LOGIN</p></a>
+                    </div>
+        
+                <div class="home fadeleft">
+                    <p><a href="walkman.html">HOME</p></a>
+                    <p style="border-bottom:2px solid white;">ALBUMS</p>
+                <p><a href="Pricingtable.html">PREMIUM</p></a>
+                <p><a href="music.html">MUSIC</p></a>
+
+                </div>
+        
+                </div>
+        </div>
+
+     <div class="carddesign">
+         <div>
+             <img src="./images/headphones.jpg">
+         </div>
+         <div class="card">
+             <small>LATEST MUSIC</small>
+     <p>Your Favourite Music In Your Pocket</p>
+     <button>FULL TRACKLIST</button>
+         </div>
+     </div>
+    
+            <div class="desktoptab">
+            <div class="tab">
+              <button class="tablinks" onclick="album(event,'CALM RELAXING')" id="defaultOpen">CALM RELAXING</button>
+              <button class="tablinks" onclick="album(event,'HIPHOP')">HIP HOP</button>
+              <button class="tablinks" onclick="album(event,'JAZZ')">JAZZ</button>
+              <button class="tablinks" onclick="album(event,'BLUES')">BLUES</button>
+              <button class="tablinks" onclick="album(event,'LATEST HITS')">LATEST HITS</button>
+            </div>
+        
+            <main>
+            
+                <div id="CALM RELAXING" class="tabcontent">
+                    <div class="tabgrid">
+    
+                        <div>
+                           
+                            <img src="./images/lonely.jpg">
+                        </div>
+    
+                        <div>
+                           
+                            <img src="./images/grass.jpg">
+                        </div>
+    
+    
+                        <div>
+                         
+                            <img src="./images/grass2.jpg">
+                        </div>
+    
+    
+                        <div>
+                          
+                            <img src="./images/moonstrike.jpg">
+                        </div>
+    
+                        <div>
+                            
+                            <img src="./images/road.jpg">
+                        </div>
+
+                    </div>
+                </div>
+            
+                <div id="HIPHOP" class="tabcontent">
+                    <div class="tabgrid">
+    
+                        <div>
+                           
+                            <img src="./images/lonely.jpg">
+                        </div>
+    
+                      <div>
+                            <img src="./images/musicdisc.jpg">
+                        </div>
+    
+    
+                        <div>
+                         
+                            <img src="./images/oceans.jpg">
+                        </div>
+    
+    
+                        <div>
+                   
+                            <img src="./images/moonstrike.jpg">
+                        </div>
+
+                       
+                    </div>
+                </div>
+            
+                <div id="JAZZ" class="tabcontent">
+                    <div class="tabgrid">
+    
+                        <div>
+                           
+                            <img src="./images/moonstrike.jpg">
+                        </div>
+    
+                        <div>
+                   
+                            <img src="./images/sakura.jpg">
+                        </div>
+    
+    
+                        <div>
+                         
+                            <img src="./images/lonely.jpg">
+                        </div>
+    
+    
+                        <div>
+                         
+                            <img src="./images/plainland.jpg">
+                        </div>
+                       
+                    </div>
+                </div>
+    
+                <div id="BLUES" class="tabcontent">
+                    <div class="tabgrid">
+    
+                        <div>
+                           
+                            <img src="./images/relaxpianopic.jpg">
+                        </div>
+    
+                        <div>
+                            
+                            <img src="./images/leaf.jpg">
+                        </div>
+    
+    
+                        <div>
+                      
+                            <img src="./images/moonstrike.jpg">
+                        </div>
+    
+                        <div>
+                            
+                            <img src="./images/lonely.jpg">
+                        </div>
+    
+    
+                        <div>
+                      
+                            <img src="./images/road.jpg">
+                        </div>
+    
+    
+                        <div>
+                         
+                            <img src="./images/lonely.jpg">
+                        </div>
+                       
+                       
+                    </div>
+                  </div>
+              
+                  <div id="LATEST HITS" class="tabcontent">
+                    <div class="tabgrid">
+    
+                        <div>
+                     
+                            <img src="./images/river.jpg">
+                        </div>
+    
+                        <div>
+                         
+                            <img src="./images/sakura.jpg">
+                        </div>
+    
+                       
+                    </div>
+                  </div>
+            
+                </main>
+    
+                </div>
+    
+
+  <div class="filteroption">
+
+        <select id="options" onchange="getValue()">
+            <option value="all"  id="all" selected>SHOWING : All</option>
+            <option value="one">Calm relaxing</option>
+            <option value="two">Jazz</option>
+            <option value="three">BLUES</option>
+            <option value="four">Latest Hits</option>
+        </select>
+
+<!--Show all music-->
+
+      <div class="tabcontent2 allshow">
+          <div class="all">
+              <h3>LATEST HITS</h3>
+              <div class="allcontent">
+          <img src="./images/disc.jpg">
+          <img src="./images/eveninggrass.jpg">
+          <img src="./images/lonely.jpg">
+          <img src="./images/grass2.jpg">
+          <img src="./images/grass.jpg">
+          <img src="./images/river.jpg">
+          <img src="./images/oceans.jpg">
+          <img src="./images/moonstrike.jpg">
+          </div>
+
+          <h3>CALM RELAXING</h3>
+          <div class="allcontent">
+      <img src="./images/disc.jpg">
+      <img src="./images/grass.jpg">
+      <img src="./images/river.jpg">
+      <img src="./images/oceans.jpg">
+      <img src="./images/moonstrike.jpg">
+      </div>
+
+      <h3>JAZZ</h3>
+      <div class="allcontent">
+        <img src="./images/lonely.jpg">
+        <img src="./images/grass2.jpg">
+        <img src="./images/grass.jpg">
+        <img src="./images/river.jpg">
+      </div>
+
+      <h3>BLUES</h3>
+            <div class="allcontent">
+              <img src="./images/grass.jpg">
+              <img src="./images/river.jpg">
+              <img src="./images/grass2.jpg">
+              <img src="./images/oceans.jpg">
+              <img src="./images/road.jpg">
+            </div>
+
+
+            <h3>LATEST HITS</h3>
+            <div class="allcontent">
+              <img src="./images/grass.jpg">
+              <img src="./images/river.jpg">
+              <img src="./images/grass2.jpg">
+            </div>
+
+      </div>
+      </div>
+
+      <!--All music albums show end here-->
+
+      <div class="tabcontent2 content1">
+        <h3>CALM RELAXING</h3>
+        <div class="allcontent">
+    <img src="./images/disc.jpg">
+    <img src="./images/grass.jpg">
+    <img src="./images/river.jpg">
+    <img src="./images/oceans.jpg">
+    <img src="./images/moonstrike.jpg">
+    </div>
+      </div>
+  
+      <div class="tabcontent2 content2">
+          <h3>JAZZ</h3>
+          <div class="allcontent">
+            <img src="./images/lonely.jpg">
+            <img src="./images/grass2.jpg">
+            <img src="./images/grass.jpg">
+            <img src="./images/river.jpg">
+          </div>
+          </div>
+
+          <div class="tabcontent2 content3">
+            <h3>BLUES</h3>
+            <div class="allcontent">
+              <img src="./images/grass.jpg">
+              <img src="./images/river.jpg">
+              <img src="./images/grass2.jpg">
+              <img src="./images/oceans.jpg">
+              <img src="./images/road.jpg">
+            </div>
+        </div>
+  
+      <div class="tabcontent2 content4">
+          <h3>LATEST HITS</h3>
+          <div class="allcontent">
+            <img src="./images/grass.jpg">
+            <img src="./images/river.jpg">
+            <img src="./images/grass2.jpg">
+          </div>
+      </div>
+
+</div>
+
+</body>
+</html>
