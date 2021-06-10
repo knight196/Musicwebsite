@@ -62,7 +62,7 @@
     .card{
         background:darkgrey;
         width:90%;
-        height:450px;
+        height:100%;
         padding:50px;
         border-radius: 10px;
         box-shadow: 0 0 40px 0 rgb(0,0,0,0.4);
@@ -146,10 +146,7 @@
     .button p:nth-child(2){
       margin-top: 10px;
     }
-    .indiviualbutton{
-        position: relative;
-        top:55px;
-    }
+ 
     hr{
         margin-top:5px;
     }
@@ -308,7 +305,13 @@
 }
 .card{
     margin:0 10px;
-}
+	height:450px;
+	    }
+	    
+	    .indiviualbutton{
+position:relative;
+		    top:55px;
+	    }
 .desktopnav{
     display:flex;
 }
