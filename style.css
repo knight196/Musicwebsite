@@ -1431,6 +1431,11 @@ a:hover{
     display:none;
   }
 }
+@media screen and (min-width:700px){
+  .musiclistcollection{
+    width:70%;
+  }
+}
 @media screen and (min-width:768px) and (max-width:800px){
   .scrollfit button{
     display:none;
