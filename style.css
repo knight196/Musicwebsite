@@ -1435,6 +1435,14 @@ a:hover{
   .musiclistcollection{
     width:70%;
   }
+      .follow > .fab{
+   padding:20px;
+   width:10%;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor:pointer;
+    margin:5px;
+  }
 }
 @media screen and (min-width:768px) and (max-width:800px){
   .scrollfit button{
