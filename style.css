@@ -146,7 +146,7 @@ transform:translateX(0);
   font-size: 25px;
   position: relative;
   z-index:1;
-  padding:50px 0;
+  padding:100px 0;
 }
 .frontpagep{
   padding: 0 10px;
@@ -194,7 +194,7 @@ button:hover{
 }
 .musiclistcollection{
   margin-top:50px;
-  width:100%;
+  width:350px;
   padding:10px;
   cursor: pointer;
   padding-top:10px;
@@ -1345,10 +1345,9 @@ footer button{
   font-size: 25px;
   margin-top: 10px;
   cursor:pointer;
+    margin:5px;
 }
-.follow > i{
-  margin: 0 5px;
-}
+
 
 .fa-facebook {
  background-color:#3B5998;
