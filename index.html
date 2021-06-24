@@ -4,618 +4,169 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="style.css">
-        <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper/swiper-bundle.min.css"
-      />
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js.js" defer></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <title>Mobile music</title>
 
     
-    <style>
-        .swiper-container {
-            width: 100%;
-          padding-top: 50px;
-          padding-bottom: 50px;
-        }
-        
-        .swiper-slide {
-          background-position: center;
-          background-size: cover;
-          width: 300px;
-          height: 300px;
-          text-align: center;
-        }
-        
-        .swiper-slide img {
-          display: block;
-          width: 100%;
-          height:100%;
-          border-radius: 10px;
-        }
-        </style>
+   
 
 </head>
 
 <body>
-
-    <navbar>
-        <p>AllROUND MUSIC</p>
-        <div class="container" onclick="myFunction(this)">
+<div class="center">
+        <header>ALLROUND MUSIC</header>
+    
+        <div class="container1" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
           </div>
-    </navbar>
-
-    <div class="navtop">
-
-        <div class="topnav">
-            <div class="faderight">
-                <span><i class="fas fa-user"></i></span>
-                    <p><a href="Login.html">LOGIN</p></a>
-            </div>
-
-        <div class="home fadeleft">
-        <p><a href="Pricingtable.html">PREMIUM</p></a>
-        <p><a href="music.html">MUSIC</p>
-        <p><a href="albums.html">Albums</p>
-        </div>
-
-        </div>
-
-    </div>
-  
-
-
-    <div class="desktopnav">
-        <p>AllROUND MUSIC</p>
-
-        <div class="desktopnavlist">
-            <p><a href="Login.html">LOGIN</p></a>
-            <p><a href="albums.html">ALBUMS</p>
-                <p><a href="music.html">MUSIC</p>
-            <p><a href="Pricingtable.html">PREMIUM</p></a>
-        </div>
-    </div>
-
-    <div class="frontpage">
-     
-        <div class="frontpagep">
-            <div class="tophead">
-                    <img class="topheadimg" src="./images/musicdisc.jpg">
-            <div class="topheadintro">
-                <p>Connect With the Music You Love</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque deleniti doloremque ipsam, fugit quidem dolores!
-                </p>
-                <button>Explore More</button>
-            </div>
-            </div>
-    </div>
-    
-
-        </div>
-
-<!--background screen-->
-
-
-<section class="mobileui">
-
-
-    <div class="circle">
-        <div class="circle1 circleui"></div>
-        <div class="circle2 circleui"></div>
-        <div class="circle3 circleui"></div>
-        <div class="circle4 circleui"></div>
-        <div class="circle5 circleui"></div>
-        <div class="circle6 circleui"></div>
-        </div>
-
-    <header class="header" data-aos="fade-up">
-
-        <div class="topicon">
-            <div class="iconflex">
-               <p>10:20</p>
-               <p><i class="fas fa-headset"></i></p>
-               <p><i class="fas fa-gamepad"></i></p>
-            </div>
-
-            <div class="cameraicon"></div>
-        
-            <div class="iconflex"> 
-                <p><i class="fab fa-bluetooth"></i></p>
-                <p><i class="fas fa-signal"></i></p>
-                <p><i class="fas fa-wifi"></i></p>
-             <p>100%<i class="fas fa-battery-full"></i></p>
-             
-            </div>
-            </div>
-
-            <div class="searchbar">
-                <i class="fas fa-search"></i>
-            </div>
-
-            <div class="bottomicon">
-            <i class="far fa-comment-dots"></i>
-            <i class="fab fa-google"></i>
-            <i class="fas fa-phone"></i>
-            <i class="fas fa-camera"></i>
-            </div>
-
-<div class="bottommenu">
-                <button><i class="fas fa-bars"></i></button>
-                <button><i class="fas fa-square"></i></button>
-                <button><i class="fas fa-angle-left"></i></button>
-            </div>
-
-        <div class="musicicon">
-            <i class="fas fa-music"></i>
-            <br>
-            <small>Music Player</small>
-        </div>
-    </div>
-
-    
-
-    <!--First Screen of musicplayer-->
-
-    <div class="loading">
-        <div class="topicon">
-            <div class="iconflex">
-               <p>10:20</p>
-               <p><i class="fas fa-headset"></i></p>
-               <p><i class="fas fa-gamepad"></i></p>
-            </div>
-
-            <div class="cameraicon"></div>
-        
-            <div class="iconflex"> 
-                <p><i class="fab fa-bluetooth"></i></p>
-                <p><i class="fas fa-signal"></i></p>
-                <p><i class="fas fa-wifi"></i></p>
-             <p>100%<i class="fas fa-battery-full"></i></p>
-             
-            </div>
-            </div>
-
-            <div class="bottommenu bottommenu2 loadingmenu">
-                <button><i class="fas fa-bars"></i></button>
-                <button><i class="fas fa-square"></i></button>
-                <button><i class="fas fa-angle-left"></i></button>
-            </div>
-
-        <div class="loader" id="loader">
-            <i class="fas fa-play"></i>
-        </div>
-    </div>
-
-
-<div class="smalllid" id="myDiv">
-
-<div class="topicon">
-    <div class="iconflex">
-       <p>10:20</p>
-       <p><i class="fas fa-headset"></i></p>
-       <p><i class="fas fa-gamepad"></i></p>
-    </div>
-
-    <div class="iconflex"> 
-        <p><i class="fab fa-bluetooth"></i></p>
-        <p><i class="fas fa-signal"></i></p>
-        <p><i class="fas fa-wifi"></i></p>
-     <p>100%<i class="fas fa-battery-full"></i></p>
-    
-    </div>
-</div>
-
-            <div class="menubutton">
-                <button class="down menubtn1"><i class="fas fa-chevron-down"></i></button>
-                <button class="song">Song</button>
-                <button id="openNav" class="menubtn1"><i class="fas fa-ellipsis-v"></i></button>
-            </div>
-
-                <div class="navbar">
-                  <div class="playlist">
-                      <i class="fas fa-broadcast-tower"></i>
-                      <p>Radio</p>
-                  </div>
-                  <div class="playlist" style="opacity:1;">
-                    <i class="fas fa-arrow-circle-right"></i>
-                    <p>PlayNext</p>
-                </div>
-                <div class="playlist">
-                    <i class="fas fa-plus"></i>
-                    <p>add to library</p>
-                </div>
-                <div class="playlist">
-                    <i class="fas fa-compact-disc"></i>
-                    <p>Go to album</p>
-                </div>
-                <div class="playlist">
-                    <i class="fas fa-share"></i>
-                    <p>Share</p>
-                </div>
-                <div class="playlist">
-                    <i class="fas fa-flag"></i>
-                    <p>Report</p>
-                </div>
-            </div>
-
-          
-
-            <div class="music">
-
-                <div class="backgroundimg">
-                    <img src="" class="img2">
-                </div>
-
-                <div class="minisong"></div>
-
-                <div class="spinner">
-                    <img src="" class="pic2">
-                </div>
-                
-                <audio src='' id="audiolist"></audio>
-
-            </div>
-
-            <div class="progress">
-
-            <div class="songset">
-                <h1 id="songname"></h1>
-            </div>
-
-            <progress id="progress" value="0"></progress>
-    
-    <br>
-
-    <div class="timer">
-        <div></div>
-        <span aria-label="timer">00:00</span>
-      </div>
-
-      <input class="slider" id="volumeslider" type="range" min="0" max="100" value="100" step="1">
-      <span>Adjust your volume</span>
-            </div>
-          
-
-            <div class="musicbuttons">
-                <button class="prev btn2"><i class="fas fa-step-backward"></i></button>
-                <button class="audioplay"><i class="fas fa-play"></i></button>
-                <button class="stop btn2"><i class="fas fa-stop"></i></button>
-                <button class="next btn2"><i class="fas fa-step-forward"></i></button>
-            </div>  
-
-            <div class="exitbox">
-                <p>Do you want to exit</p>
-
-                <button class="yes">Yes</button>
-                <button class="No">No</button>
-            </div>
-
-            
-            <div class="buttons buttons2">
-
-                <span onclick="grip()" class="grip"><i class="fas fa-grip-lines"></i></span>
-
-                <div class="listcollection">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-
-                <button class="closemusic"><i class="fas fa-bars"></i></button>
-                <button id="home"><i class="fas fa-square"></i></button>
-                <button class="exit"><i class="fas fa-angle-left"></i></button>
-            </div>
-
-        </div>
-
-
-        
-
-        <!--End of First Screen Music player-->
-
-
-        <!--Second Screen of music list Starts here-->
-
-        <div class="otherscreen">
-
-    <div class="topicon">
-        <div class="iconflex">
-           <p>10:20</p>
-           <p><i class="fas fa-headset"></i></p>
-           <p><i class="fas fa-gamepad"></i></p>
-        </div>
-    
-        <div class="iconflex"> 
-            <p><i class="fab fa-bluetooth"></i></p>
-            <p><i class="fas fa-signal"></i></p>
-            <p><i class="fas fa-wifi"></i></p>
-         <p>100%<i class="fas fa-battery-full"></i></p>
-        
-        </div>
-    </div>
-    
-    <div class="topmusiclogo">
-        <i class="fas fa-play"></i>
-    <small>Music</small>
-    </div>
-
-    <div class="scrolllist">
-        <section class="musicscroll">
-            <div class="musictitle">
-                    <img src="./images/relaxpianopic.jpg">
-                   <div class="logotitle">
-                       <small>More From</small>
-                       <br>
-                       <small>relaxdaily</small>
-                   </div>
-            </div>
-
-            <div class="thumbsup">
-                <i class="fas fa-thumbs-up"></i>
-            </div>
-
-    
-            <div class="secondlid">
-    
-                <ul class="musics-ul">
-                    <li ></li>
-                    <li ></li>
-                    <li ></li>
-                    <li ></li>
-                    <li ></li>
-                    <li ></li>
-                    <li ></li>
-                    <li ></li>
-                    <li ></li>
-                    <li ></li>
-                    <li ></li>
-                    <li ></li>
-                  </ul>
-                
-               </div>
-
-               <div class="scrollfit">
-                   <div class="scrollleft">
-                       <button onclick="scrollleft()" class="slideleft"><i class="fas fa-caret-left"></i></button>
-                   </div>
-                   <div class="scrollcontainer">
-                       <div class="scrolllist2">
-                   <p></p>
-                   <p></p>
-                   <p></p>
-                   <p></p>
-                   <p></p>
-                   <p></p>
-                   <p></p>
-                   <p></p>
-                   <p></p>
-                   <p></p>
-                   <p></p>
-                    </div>
-                   </div>
-                   <div class="scrollright">
-                       <button onclick="scrollright()" class="slideright"><i class="fas fa-caret-right"></i></button>
-                   </div>
-               </div>
-
-</section>
-               </div>
-
-
-               <div class="exitbox">
-                <p>Do you want to exit</p>
-
-                <button class="yes">Yes</button>
-                <button class="No">No</button>
-            </div>
- 
-            <div class="bottomplay">
+          <div class="desktopnav">
       
-                <div class="bottomcontainer">
-                <div>
-                    <img src="" class="bottomplayimg">
-                </div>
- 
-                <div class="bottomsongname">
-                    <p id="bottomsong"></p>
-                </div>
-
-                </div>
+              <div class="desktopnavlist">
+                <p><a href="Login.html">LOGIN</p></a>
+                  <p><a href="albums.html">ALBUM</p></a>
+                  <p><a href="music.html">MUSIC</p></a>
+                  <p><a href="Pricingtable.html">PREMIUM</p></a>
+              </div>
+          </div>
+        </div>
+    
+        <hr>
         
-              
-                <div>
-                  <span id="thirdplay"><i  class="fas fa-play"></i></span>
+    
+        
+        <div class="navtop">
+    
+            <div class="topnav">
+                <div class="faderight">
+                    <spaxn><i class="fas fa-user"></i></span>
+                        <p style="border-bottom: 2px solid white;" id="user"><a href="Login.html">LOGIN</p></a>
                 </div>
- 
-                <div>
-                   <span id="thirdnext"><i  class="fas fa-step-forward"></i></span>
-                </div>
+    
+            <div class="home fadeleft">
+                <p><a href="albums.html">ALBUMS</p></a>
+                <p><a href="music.html">MUSIC</p></a>
+                <p><a href="Pricing.html">PREMIUM</p></a>
             </div>
     
+            </div>
     
-           <div class="buttons">
-            <button class="closemusic"><i class="fas fa-bars"></i></button>
-            <button id="home"><i class="fas fa-square"></i></button>
-            <button class="exit"><i class="fas fa-angle-left"></i></button>
         </div>
-
-           <!--End of Second Screen-->
-   
-    </header>
-
-    <div class="musiclistcollection" data-aos="fade-up">
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-    </div>
-</section>
-
-<div class="musicplatform">
-
-    <div class="musicinfo" data-aos="fade-up"  data-aos-delay="100">
-        <h1>All in one Music Platform</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolore.</p>
-    </div>
-
     
-    
-    <div class="musicplatformflex">
 
-    <div class="musiccombo disc"  data-aos="fade-up"  data-aos-delay="500">
-    <img src="./images/disc.jpg">
-    <div>
-        <h1>Your Playlist in Minutes</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, saepe.</p>
-    </div>
-    </div>
-
-    <div class="musiccombo downloadimg"  data-aos="fade-up" data-aos-delay="800">
-        <img src="./images/download.png">
-        <div >
-            <h1>Never Miss your Favourite Music even in Offline</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, maxime?</p>
-        </div>
-    </div>
-
-    <div class="musiccombo" data-aos="fade-up" data-aos-delay="1000">
-        <img src="./images/unlimited.png">
+        <div class="mainsection">
         <div>
-            <h1>Listen your Unlimited Music</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, reiciendis!</p>
+            <img src="./images/musicdisc.jpg">
         </div>
-    </div>
-
-    </div>
-
-
-<section class="musicslider">
-    <h1>Choose the music you like</h1>
-    <div class="musicslider1">
-   <p></p>
-   <p></p>
-   <p class="scale"></p>
-   <p></p>
-   <p></p>
-   </div>
-    <button>Let's GO</button>
-</section>
-
-<div class="musicscroll" data-aos="fade-up" data-aos-delay="500">
-    <div class="scrollx">
-        <h1>Today's hit</h1>
-        <div class="scrollleft2">
-            <button onclick="scrollleft2()" class="slideleft2"><i class="fas fa-angle-left"></i></button>
+        <div class="connect">
+            <h1>CONNECT WITH THE MUSIC YOU LOVE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit quas ullam saepe laudantium omnis quos alias quam perferendis delectus.
+            </p>
+            <button>Explore More</button>
         </div>
-        <div class="scrollimg">
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        </div>
-        <div class="scrollright2">
-            <button onclick="scrollright2()" class="slideright2"><i class="fas fa-caret-right"></i></button>
-        </div>
-    </div>
-</div>
 
-<div class="gridmusic" data-aos="fade-up" data-aos-delay="700">
-    <div class="gridx">
-        <h1>Our Best Pick</h1>
-    </div>
-    <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/grass2.jpg" />
-            <p>Joe Hisaishi</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/grass.jpg" />
-            <p>Kiss the Rain</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/river.jpg" />
-            <p>River flows in you</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/oceans.jpg" />
-            <p>Maybe</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/sakura.jpg" />
-            <p>Relax Piano</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/moonstrike.jpg" />
-            <p>Katawaredoki</p>
-          </div>
-        </div>
-      </div>
-  
-</div>
-
-<div class="download">
-    <h1>AVAILABLE TO DOWNLOAD ON</h1>
-
-<div class="logo">
-    <i class="fab fa-apple"></i>
-    <i class="fab fa-android"></i>
-    <i class="fab fa-spotify"></i>
-    <i class="fab fa-soundcloud"></i>
-    <img class="amazonmusic" src="https://www.brandchannel.com/wp-content/uploads/2018/08/amazon_music_logo.jpg">
-    <img class="youtubemusic" src="https://www.androidcentral.com/sites/androidcentral.com/files/article_images/2019/06/youtube-music-logo.png?itok=wQq1v6e6">
-</div>
-
-    </div>
-
-    <hr>
-
-    <footer>
-        <h1>JOIN OUR MAILING LIST FOR MORE NEWSLETTER</h1>
-        <div class="footerinput">
-            <input type="text" placeholder="Enter your Email address">
-            <button>SUBSCRIBE</button>
         </div>
         
-        <hr> 
+    <div class="secondpage">
+<div>
+   <img src="./images/musicmobile.jpeg">
+</div>
 
-            <div class="follow">
-                <h1>FOLLOW US</h1>
-                <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-youtube"></i>
-              <i class="fab fa-pinterest"></i>
+<div class="gridtemplate">
+    <h1>Why AllRound Music?</h1>
+        <div class="grid">
+        
+        <div>
+            <h1>A world of music in your Pocket</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, perspiciatis!</p>
+        </div>
+        <div>
+            <h1>NO Wifi? NO Problem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, qui.</p>
+        </div>
+        <div>
+            <h1>Craft your collection</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, minus.</p>
+        </div>
+        <div>
+            <h1>Made for you</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, adipisci.</p>
+        </div>
+        </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="musicanywhere">
+        <div>
+            <h1>Listen your favorite music whenever & wherever you are</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum iusto similique impedit ad, mollitia necessitatibus non ipsum fugiat aspernatur quae.
+            </p>
+        </div>
+
+        <div>
+      
+            <i class="fas fa-laptop"></i>
+            <i class="fas fa-desktop"></i> 
+            <i class="fas fa-mobile"></i>
+            <i class="fas fa-tv"></i>
+            <i class="fas fa-car"></i>       
+
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        <div>
+            <h1>Availabel to Download On</h1>
+        </div>
+
+            <div class="marquee">
+                <div>
+                  <i class="fab fa-apple"></i>       
+                  <i class="fab fa-android"></i> 
+                  <i class="fab fa-spotify"></i>
+                  <i class="fab fa-soundcloud"></i>   
             </div>
-    </footer>
-<!--End of the background screen-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            </div>
+
+
+            </div>
+
+            <hr>
+
+            <div class="mailing">
+
+                <h1>Join our mailing list for more newsletter</h1>
+
+                <div>
+                    <input type="text" placeholder="Enter your Email Address">
+                    
+                    <button>SUBSCRIBE</button>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="social">
+                <h1>Follow us On</h1>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+
+
+
+   
 </body>
 </html>
