@@ -139,6 +139,7 @@ color:white;
   }
   .mainsection{
     padding:100px 20px;
+    overflow: hidden;
   }
   .mainsection h1{
     text-decoration: underline;
@@ -146,9 +147,33 @@ color:white;
   }
  .mainsection img{
 width:100%;
+animation: 1s linear bottom;
+position: relative;
  }
  .connect{
    margin-top:40px;
+   animation:1s linear bottom;
+   position: relative;
+ }
+
+ @keyframes bottom{
+   from{
+     bottom:-200px;
+     opacity:0;
+   }
+   to{
+     bottom:0;
+     opacity:1;
+   }
+ }
+
+ @keyframes anim {
+   from{
+     bottom:-100px;
+   }
+   to{
+     bottom:0;
+   }
  }
  .mainsection button{
    border-radius: 10px;
@@ -156,6 +181,9 @@ width:100%;
    background:darkcyan;
    color:white;
    padding: 10px 20px;
+   margin:10px 0;
+   animation:2s linear anim;
+   position: relative;
  }
  .secondpage{
    background:darkcyan;
@@ -181,27 +209,29 @@ width:100%;
  .musicanywhere{
   padding:20px;
   color:black;
+  background:darkcyan;
  }
  .musicanywhere .fas{
    font-size: 40px;
    padding: 20px;
+   color:white;
  }
  .musicanywhere > div{
    margin:30px;
  }
  .footer{
-   background:darkcyan;
+   background:lightgrey;
    padding:50px;
    text-transform: uppercase;
  }
  .footer .fab{
    font-size: 40px;
    padding:10px;
-   color:white;
+   color:black;
  }
 
 .mailing{
-  background:darkcyan;
+  background:lightgrey;
   padding:20px;
   display:flex;
   flex-direction: column;
@@ -216,10 +246,12 @@ width:100%;
 .mailing button{
   padding: 10px 20px;
   border:none;
+  background:darkcyan;
+  color:white;
   border-radius: 5px;
 }
 .social{
-  background:darkcyan;
+  background:lightgrey;
   padding:20px;
   text-transform: uppercase;
 }
@@ -245,7 +277,7 @@ width:100%;
 
 .slider{
   padding:20px;
-  background:darkcyan;
+  background:lightgrey;
   text-align: center;
 }
 .slider h1{
@@ -422,4 +454,29 @@ padding: 150px 0;
 .mailing{
   display:flex;
 }
+.mainsection img{
+  animation:1s linear left;
+}
+@keyframes bottom{
+  from{
+    left:-200px;
+    opacity:0;
+  }
+  to{
+    left:0;
+    opacity:1;
+  }
+}
+
+@keyframes left{
+  from{
+    right:-100px;
+    opacity:0;
+  }
+  to{
+    right:0;
+    opacity:1;
+  }
+}
+
 }
