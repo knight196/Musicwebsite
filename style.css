@@ -256,26 +256,41 @@ width:100%;
   text-transform: uppercase;
 }
 .social .fab{
-    padding: 20px;
+  padding: 20px;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;
 }
 
 .fa-facebook {
   background: #3B5998;
   color: white;
+  text-shadow: 2px 2px rgba(0,0,0,0.5),
+  2px 2px 3px rgba(0,0,0,0.5),
+  3px 3px 4px rgba(0,0,0,0.5),
+  4px 4px 5px rgba(0,0,0,0.5);
 }
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  text-shadow: 2px 2px rgba(0,0,0,0.5),
+  2px 2px 3px rgba(0,0,0,0.5),
+  3px 3px 4px rgba(0,0,0,0.5),
+  4px 4px 5px rgba(0,0,0,0.5);;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  text-shadow: 2px 2px rgba(0,0,0,0.5),
+  2px 2px 3px rgba(0,0,0,0.5),
+  3px 3px 4px rgba(0,0,0,0.5),
+  4px 4px 5px rgba(0,0,0,0.5);;
+}
+
 
 .slider{
   padding:20px;
