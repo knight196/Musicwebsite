@@ -256,9 +256,11 @@ width:100%;
   text-transform: uppercase;
 }
 .social .fab{
+    padding: 20px;
   font-size: 20px;
- padding:20px;
- margin: 0 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
 }
 .fa-instagram {
   background: #125688;
