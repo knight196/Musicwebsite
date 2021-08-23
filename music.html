@@ -34,7 +34,7 @@
                 </div>
     
             <div class="home fadeleft">
-                <p><a href="index.html">HOME</p></a>
+                <p><a href="walkman.html">HOME</p></a>
                 <p><a href="albums.html">ALBUMS</p></a>
                 <p style="border-bottom: 2px solid white;"><a href="music.html">MUSIC</p></a>
                 <p><a href="Pricingtable.html">PREMIUM</p></a>
@@ -44,14 +44,27 @@
     
         </div>
     
+        <!--Smaller screen Music UI-->
 
     <main>
 
+
+        <div class="musicscreen">
+
         <div class="borderbox">
-            <div class="border"></div>
             <img src="" class="img">
         </div>
 
+            <div class="icons">
+             <button id="threedots"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="listoption">
+                <p id="homebtn">Home <i class="fas fa-home"></i></p>
+                <p id="minimize">Minimize <i class="fas fa-chevron-down"></i></p>
+            </div>
+
+            <div class="playbuttonlist">
 <div class="audiooption">
 <button id="prev"><i class="fas fa-backward"></i></button>
 <button id="audioplayer"><i class="fas fa-play"></i></button>
@@ -69,7 +82,7 @@
     <div class="progress">
 
         <div class="songset">
-            <h1 id="songname"></h1>
+            <h1 class="songname" id="songname"></h1>
         </div>
 
 
@@ -88,23 +101,157 @@
  <br> 
   <span>Adjust your volume</span>
         </div>
-        
-        <div class="aligncenter">
-            <ol class="listcollection">
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                </ol>
+
+    </div>
+
 </div>
+
+<div class="allmusiccollection">
+
+    <h1>Top Song</h1>
+        <div class="aligncenter">
+            <button class="left" onclick="left(event,'one')"><i class="fas fa-chevron-left"></i></button>
+                <div class="listcollection" id="one">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <button class="right" onclick="right(event,'one')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <h1>Weekend Song</h1>
+
+            <div class="aligncenter">
+                <button class="left" onclick="left(event,'two')"><i class="fas fa-chevron-left"></i></button>
+                <div class="listcollection2 listcollection" id="two">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <button class="right" onclick="right(event,'two')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+<h1>Vibe Song</h1>
+            <div class="aligncenter">
+                <button class="left" onclick="left(event,'three')"><i class="fas fa-chevron-left"></i></button>
+                <div class="listcollection3 listcollection" id="three">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <button class="right" onclick="right(event,'three')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            </div>
+
+            <section>
+
+                <div class="autoslider">
+    
+                    <div class="slidertrack">
+    
+                        <div class="slideauto">
+                            <img src="./images/eveninggrass.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/grass.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/grass2.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/river.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/lonely.jpg">
+                        </div>
+    
+    
+                        <div class="slideauto">
+                            <img src="./images/oceans.jpg">
+                        </div>
+    
+    
+                        <div class="slideauto">
+                            <img src="./images/moonstrike.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/leaf.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/eveninggrass.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/eveninggrass.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/grass.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/grass2.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/river.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/lonely.jpg">
+                        </div>
+    
+    
+                        <div class="slideauto">
+                            <img src="./images/oceans.jpg">
+                        </div>
+    
+    
+                        <div class="slideauto">
+                            <img src="./images/moonstrike.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/leaf.jpg">
+                        </div>
+    
+                        <div class="slideauto">
+                            <img src="./images/eveninggrass.jpg">
+                        </div>
+    
+    
+    
+                        </div>
+                        
+                    </div>
+
+                    <p style="font-size: 30px; font-weight: bold;">Choose your Favourtie Music</p>
+    
+                </section>
+    
+    
         </main>
+        
+        <!--End of smaller screen Music UI-->
+        
+        
+        
+        <!--Desktop Music Ui-->
 
         <section class="desktopui">
 
@@ -113,19 +260,19 @@
                 <div>
                     <h1>ALLROUND MUSIC</h1>
                 </div>
-
+                
                 <div class="href">
-                    <p><a href="index.html">HOME</p></a>
+                    <p><a href="walkman.html">HOME</p></a>
                     <p id="user" style="border-bottom:2px solid white;font-size:20px;">MUSIC</p>
                     <p><a href="albums.html">ALBUM</p></a>
-                        <p><a href="Login.html">LOGIN</p></a>
+                    <p><a href="Login.html">LOGIN</p></a>
                     <p><a href="Pricingtable.html">PREMIUM</p></a>
                 </div>
-
+                
                 <div class="playlist">
                     <p style="color:lightskyblue;">YOUR LIBRARY</p>
                     <br>
-                   
+                    
                     <p><i class="fas fa-clock"></i> RECENTLY ADDED</p>
                     <p><i class="fas fa-heart"></i> FAVORITE SONGS</p>
                     <p><i class="fas fa-user"></i> ARTISTS</p>
@@ -135,83 +282,83 @@
                 <div class="playlist">
                     <p style="color:lightskyblue;">PLAYLIST</p>
                     <br>
-                   
+                    
                     <p>TOP BLUES</p>
                     <p>TOP RELAX MUSIC</p>
                     <p>TOP POP</p>
                     
                 </div>
-
+                
             </div>
-
-<div class="sideui">
-
-
+            
+            <div class="sideui">
+                
+                
     <div class="search">
-
+        
         <div class="searchbtn">
             <input class="searchinput" id="myInput" type="text" placeholder="search">
             <span onclick="myFunction2()"><i class="fas fa-search"></i></span>
         </div>
-
-
+        
+        
         <div class="icons">
             <i class="fas fa-cog"></i>
             <i class="fas fa-bell"></i>
             <i class="fas fa-user"></i>
         </div>
-
+        
     </div>
-
-            <ul class="musicimg">
-
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
-                
-            </ul>
-
-            <div class="feature">
-                <h1>Features</h1>
+    
+    <ul class="musicimg">
+        
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+    </ul>
+    
+    <div class="feature">
+        <h1>Features</h1>
                 <p>This week</p>
             </div>
 
             <div class="featurecard">
-            <img src="./images/disc.jpg">
-
-            <div>
-                <img src="./images/grass.jpg">
-                <img src="./images/grass2.jpg">
-                <img src="./images/river.jpg">
-                <img src="./images/moonstrike.jpg">
-                <img src="./images/leaf.jpg">
+                <img src="./images/disc.jpg">
+                
+                <div>
+                    <img src="./images/grass.jpg">
+                    <img src="./images/grass2.jpg">
+                    <img src="./images/river.jpg">
+                    <img src="./images/moonstrike.jpg">
+                    <img src="./images/leaf.jpg">
+                </div>
+                
             </div>
-
-            </div>
-
-      
+            
+            
         </div>
-
+        
         
         
     </section>
     
     <div class="bottomplay">
-
+        
         <audio src="" id="audiolist2"></audio>
-
+        
         <div class="bottomsong">
-
+            
             <img src="" id="bottomimg">
-
+            
             <div class="songname">
                 <p id="bottomsongname"></p>
             </div>
-
+            
             
         </div>
         
@@ -225,19 +372,37 @@
         <div class="progressbar">
             <progress id="progress2" value="0"></progress>
         </div>
-
+        
         <div class="timer2">
             <div></div>
             <span aria-label="timer2">00:00</span>
-          </div>
+        </div>
         
-          <div class="volume">
+        <div class="volume">
             <i class="fas fa-volume-off"></i>
             <input class="slider" id="volumeslider2" type="range" min="0" max="100" value="100" step="1">
-          </div>
-
+        </div>
+        
     </div>
+    <!--End of Desktop Music UI-->
 
+<!--Bottom song option to stop or play-->
+<div class="bottomoptionlist">
+
+<div class="bottomoption">
+    <button id="bottomoptionprev"><i class="fas fa-backward"></i></button> 
+<button id="bottomoptionplay"><i class="fas fa-play"></i></button>  
+<button id="bottomoptionstop"><i class="fas fa-stop"></i></button>
+<button id="bottomoptionnext"><i class="fas fa-forward"></i></button>  
+
+</div>
+
+<p id="bottomoptiontitle">Title</p>
+
+</div>
+
+<!--End of the song option-->
     
+
 </body>
 </html>
