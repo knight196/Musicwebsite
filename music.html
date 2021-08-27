@@ -51,6 +51,20 @@
 
         <div class="musicscreen">
 
+              <!--Playlist-->
+
+    <div class="playlistbox">
+ 
+        <div class="playlistscreen">
+
+        
+    
+        </div>
+
+        </div>
+        
+        <!--End of Playlist-->
+
         <div class="borderbox">
             <img src="" class="img">
         </div>
@@ -61,6 +75,7 @@
 
             <div class="listoption">
                 <p id="homebtn">Home <i class="fas fa-home"></i></p>
+                <p id="playlistadded">Playlist <i class="fas fa-plus"></i></p>
                 <p id="minimize">Minimize <i class="fas fa-chevron-down"></i></p>
             </div>
 
@@ -70,6 +85,7 @@
 <button id="audioplayer"><i class="fas fa-play"></i></button>
 <button id="stop"><i class="fas fa-stop"></i></button>
 <button id="next"><i class="fas fa-forward"></i></button>
+<button class="thumbsup"><i class="fas fa-thumbs-up"></i></button>
 </div>
 
     <div class="music">
@@ -387,6 +403,8 @@
     <!--End of Desktop Music UI-->
 
 <!--Bottom song option to stop or play-->
+
+
 <div class="bottomoptionlist">
 
 <div class="bottomoption">
@@ -401,7 +419,14 @@
 
 </div>
 
+
 <!--End of the song option-->
+
+<div class="bottomtrack">
+    <audio id="player" controls></audio>
+    <p id="tracklist">SongList</p>
+</div>
+
     
 
 </body>
