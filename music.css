@@ -376,7 +376,7 @@ overflow: hidden;
     display:none;
 }
 #player{
-    width:100%;
+    width:200px;
 }
   .optionbtn{
      width:40%;
@@ -387,10 +387,8 @@ overflow: hidden;
   }
   #tracklist{
 font-size: 12px;
-  }
-  .bottomtrack > #player,#tracklist{
-      margin:0 10px;
-  }
+margin:0 10px;
+}
   @media screen and (min-width:700px){
       .right,.left{
           display:block;
