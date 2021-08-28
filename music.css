@@ -374,7 +374,7 @@ overflow: hidden;
     display:none;
 }
 #player{
-    width:200px;
+    width:100%;
 }
   .optionbtn{
      width:40%;
