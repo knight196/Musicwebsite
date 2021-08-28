@@ -231,7 +231,10 @@ margin:auto 20px;
 .musicscreen{
     position: relative;
 }
-
+.playlistscreen{
+    overflow:auto;
+    padding-bottom:50px;
+}
 .playlistscreen > div {
     display:flex;
    align-items: center;
