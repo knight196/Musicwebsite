@@ -364,12 +364,10 @@ overflow: hidden;
 }
 
 .bottomtrack{
-    position: fixed;
+     position: fixed;
     width:100%;
-    display:flex;
     align-items: center;
-    justify-content: space-between;
-    padding:0 20px;
+    flex-direction: column-reverse;
     background:black;
     color:white;
     bottom:0;
@@ -386,8 +384,8 @@ overflow: hidden;
       font-size: 10px;
   }
   #tracklist{
-font-size: 12px;
-margin:0 10px;
+font-size: 20px;
+      margin:10px auto;
 }
   @media screen and (min-width:700px){
       .right,.left{
